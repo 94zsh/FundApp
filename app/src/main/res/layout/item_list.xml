@@ -1,0 +1,103 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="35dp"
+    android:gravity="center"
+    android:orientation="horizontal">
+
+    <TextView
+        android:background="#55ff0099"
+        android:text="姓名"
+        android:id="@+id/tv0"
+        style="@style/TableItem"
+        android:layout_width="@dimen/table_item_width"
+        android:layout_height="@dimen/table_item_height"
+        />
+
+    <TextView
+        android:background="#55000099"
+        android:text="学号"
+        android:id="@+id/tv1"
+        style="@style/TableItem"
+        android:layout_width="@dimen/table_item_width"
+        android:layout_height="@dimen/table_item_height"
+        />
+
+    <com.zz.fundapp.ui.view.InterceptLinearLayout
+        android:id="@+id/top_linearlayout"
+        android:layout_width="wrap_content"
+        android:layout_height="match_parent">
+
+        <com.zz.fundapp.ui.view.HeaderHorizontalScrollView
+            android:layout_width="wrap_content"
+            android:id="@+id/my_scrollview"
+            android:scrollbars="none"
+            android:layout_height="match_parent">
+
+            <LinearLayout
+                android:orientation="horizontal"
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent">
+
+
+                <TextView
+                    android:id="@+id/tv2"
+                    style="@style/TableItem"
+                    android:layout_width="75dp"
+                    android:layout_height="@dimen/table_item_height"
+                    android:text="数学" />
+
+                <TextView
+                    android:text="语文"
+                    android:id="@+id/tv3"
+                    style="@style/TableItem"
+                    android:layout_width="@dimen/table_item_width"
+                    android:layout_height="@dimen/table_item_height"
+                    />
+
+                <TextView
+                    android:text="英语"
+                    android:id="@+id/tv4"
+                    style="@style/TableItem"
+                    android:layout_width="@dimen/table_item_width"
+                    android:layout_height="@dimen/table_item_height"
+                    />
+
+                <TextView
+                    android:text="物理"
+                    android:id="@+id/tv5"
+                    style="@style/TableItem"
+                    android:layout_width="@dimen/table_item_width"
+                    android:layout_height="@dimen/table_item_height"
+                    />
+
+                <TextView
+                    android:text="生物"
+                    android:id="@+id/tv6"
+                    style="@style/TableItem"
+                    android:layout_width="@dimen/table_item_width"
+                    android:layout_height="@dimen/table_item_height"
+                    />
+
+                <TextView
+                    android:text="化学"
+                    android:id="@+id/tv7"
+                    style="@style/TableItem"
+                    android:layout_width="@dimen/table_item_width"
+                    android:layout_height="@dimen/table_item_height"
+                    />
+
+
+            </LinearLayout>
+
+
+        </com.zz.fundapp.ui.view.HeaderHorizontalScrollView>
+
+
+    </com.zz.fundapp.ui.view.InterceptLinearLayout>
+
+
+
+
+</LinearLayout>

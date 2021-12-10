@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <item
+            android:id="@+id/health"
+            android:icon="@drawable/ic_health_grey_24dp"
+            android:title="@string/title_health"/>
+
+<!--    <item
+            android:id="@+id/exercise"
+            android:icon="@drawable/ic_shoes_grey_24dp"
+            android:title="@string/title_exercise"/>
+
+    <item
+            android:id="@+id/devices"
+            android:icon="@drawable/ic_devices_grey_24dp"
+            android:title="@string/title_devices"/>-->
+
+    <item
+            android:id="@+id/me"
+            android:icon="@drawable/ic_me_grey_24dp"
+            android:title="@string/title_me"/>
+
+</menu>

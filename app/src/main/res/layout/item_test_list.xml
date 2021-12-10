@@ -1,0 +1,102 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:gravity="center"
+    android:orientation="horizontal">
+
+    <TextView
+        android:background="#55ff0099"
+        android:text="名称"
+        android:id="@+id/tv_name"
+        style="@style/TableItem"
+        android:gravity="left|center_vertical"
+        android:textSize="12sp"
+        android:layout_width="150dp"
+        android:layout_height="@dimen/table_item_height"
+        />
+
+
+        <com.zz.fundapp.ui.view.TestScrollView
+            android:layout_width="wrap_content"
+            android:id="@+id/testScrollView"
+            android:scrollbars="none"
+            android:layout_height="match_parent">
+
+            <LinearLayout
+                android:orientation="horizontal"
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent">
+
+                <TextView
+                    android:background="#55000099"
+                    android:text="净值日期"
+                    android:id="@+id/tv_jzrq"
+                    style="@style/TableItem"
+                    android:layout_width="100dp"
+                    android:layout_height="@dimen/table_item_height"
+                    />
+
+                <TextView
+                    android:id="@+id/tv_dwjz"
+                    style="@style/TableItem"
+                    android:layout_width="75dp"
+                    android:layout_height="@dimen/table_item_height"
+                    android:text="当日净值" />
+
+                <TextView
+                    android:text="估算净值"
+                    android:id="@+id/tv_gsz"
+                    style="@style/TableItem"
+                    android:layout_width="100dp"
+                    android:layout_height="@dimen/table_item_height"
+                    />
+
+                <com.zz.fundapp.ui.view.SortTextView
+                    android:text="估算涨跌百分比"
+                    android:id="@+id/stv_gszzl"
+                    style="@style/TableItem"
+                    android:layout_width="100dp"
+                    android:layout_height="@dimen/table_item_height"
+                    />
+
+                <TextView
+                    android:text="估值日期"
+                    android:id="@+id/tv_gztime"
+                    style="@style/TableItem"
+                    android:layout_width="150dp"
+                    android:paddingStart="10dp"
+                    android:paddingEnd="10dp"
+                    android:layout_height="@dimen/table_item_height"
+                    />
+
+                <TextView
+                    android:text="更新时间"
+                    android:id="@+id/tv_timestamp"
+                    style="@style/TableItem"
+                    android:layout_width="100dp"
+                    android:layout_height="@dimen/table_item_height"
+                    />
+
+                <com.zz.fundapp.ui.view.SortTextView
+                    android:text="日变化"
+                    android:id="@+id/tv_dayChange"
+                    style="@style/TableItem"
+                    android:layout_width="100dp"
+                    android:layout_height="@dimen/table_item_height"
+                    />
+                <com.zz.fundapp.ui.view.SortTextView
+                    android:text="日变化日期幅度"
+                    android:id="@+id/tv_dayChangeValue"
+                    style="@style/TableItem"
+                    android:layout_width="100dp"
+                    android:layout_height="@dimen/table_item_height"
+                    />
+
+            </LinearLayout>
+
+
+        </com.zz.fundapp.ui.view.TestScrollView>
+
+</LinearLayout>

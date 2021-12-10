@@ -1,0 +1,45 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".ui.me.FundListActivity"
+    android:orientation="vertical">
+
+   <CalendarView
+       android:id="@+id/calendarView"
+       android:layout_width="match_parent"
+       android:layout_height="wrap_content"/>
+   <LinearLayout
+       android:layout_width="match_parent"
+       android:layout_height="wrap_content"
+       android:orientation="horizontal"
+       android:gravity="center">
+      <Button
+          android:id="@+id/bt_refresh"
+          android:layout_width="wrap_content"
+          android:layout_height="wrap_content"
+          android:text="刷新"
+          android:layout_gravity="center"
+          />
+
+   </LinearLayout>
+
+   <TextView
+       android:id="@+id/tv_size"
+       android:layout_width="wrap_content"
+       android:layout_height="wrap_content"
+       android:layout_gravity="center"
+       android:text="数量："/>
+
+   <include
+       android:id="@+id/top_header"
+       layout="@layout/item_history_list" />
+   <com.zz.fundapp.ui.view.BothwayListView
+       android:id="@+id/listView"
+       android:divider="@null"
+       android:layout_width="match_parent"
+       android:layout_height="match_parent" />
+
+</LinearLayout>
